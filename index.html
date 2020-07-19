@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">
+          <img src="images/hat.png" height="60" width="60" >
+        </div>
+        <div id="header-right">
+            <p>
+                <b>Sign Up</b>
+            </p>
+        </div>
+    </div>   
+    <div id="container">
+        <form id="register-form">
+            <div class="form-control">
+                <label for="username">UserName</label>
+                <input type="text" id="username" autocomplete="off" placeholder="Enter UserName"/>
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" autocomplete="off" placeholder="Enter Email" />
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" autocomplete="off" placeholder="Enter Password" />
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" autocomplete="off" placeholder="Re-enter Password" />
+                <small class="Error-Message"></small>
+            </div>
+            <div class="end-section">
+                <input type="submit" id="submit" value="Submit" />
+                <p style="margin: 10px;">already have an account?<a href="login.html">Log In</a></p>
+                <div id="validateMessage" style="margin: 10px;"></div>
+            </div>
+        </form>
+        <div class="vl">
+            <button class="inner-text">OR</button>
+        </div>
+        <div class="social-media">
+            <button class="btn" style="background-color:  #3b5998;"><i class="fa fa-facebook fa-fw"></i></button>
+            <button class="btn" style="background-color: #db3236"><i class="fa fa-google fa-fw"></i></button>
+            <button class="btn" style="background-color: #39c2d7"><b>EPAM</b></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
